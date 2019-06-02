@@ -18,15 +18,16 @@ function imprimir() {
         text = "<tr>" + "<th>" + text + "<h1>" + getCars()[i] + "</h1>" + "</th>" + "</tr>";
     }
     document.getElementById('tabla').innerHTML = text;
+    document.getElementById('tabla').style.display="inline-block";
 }
 function getCars() {
     var cars = ["bmw", "volvo", "saab", "ford"];
     return cars;
 }
 function limpiar() {
-    var text = "";
+   /* var text = "";
     for (var i = 0; i < getCars().length; i++) {
         text = "<tr>" + "<th>" + text + "<h1>" + text + "</h1>" + "</th>" + "</tr>";
-    }
-    document.getElementById('tabla').innerHTML = text;
+    }*/
+    document.getElementById('tabla').style.display="none";
 }
